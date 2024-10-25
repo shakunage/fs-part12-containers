@@ -1,0 +1,16 @@
+Script started on Mon Oct 14 13:11:28 2024
+Restored session: Mon Oct 14 13:08:56 JST 2024
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Veikka-MacBook-Pro.local/Users/veikka/Local%20Files/FullStackMOOC/fs-part12-containers[0m[27m[24m[Jveikka@Veikka-MacBook-Pro fs-part12-containers % [K[?2004hv [7mdocker container run -it ubuntu[7m [7mbash[27m[K[A[44C[27md[27mo[27mc[27mk[27me[27mr[27m [27mc[27mo[27mn[27mt[27ma[27mi[27mn[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27mi[27mt[27m [27mu[27mb[27mu[27mn[27mt[27mu [27mb[27ma[27ms[27mh[?2004l
+[?2004h]0;root@f1c27358a516: /root@f1c27358a516:/# mkdira -    .p    -p [7m /usr/src/app[27m /usr/src/app
+[?2004l[?2004h]0;root@f1c27358a516: /root@f1c27358a516:/# touch [7m/usr/src/app/index.js[27m/usr/src/app/index.js
+[?2004l[?2004h]0;root@f1c27358a516: /root@f1c27358a516:/# [Kexotit
+[?2004lbash: exotit: command not found
+[?2004h]0;root@f1c27358a516: /root@f1c27358a516:/# exit
+[?2004lexit
+[1m[7m%[27m[1m[0m                                                                                ]7;file://Veikka-MacBook-Pro.local/Users/veikka/Local%20Files/FullStackMOOC/fs-part12-containers[0m[27m[24m[Jveikka@Veikka-MacBook-Pro fs-part12-containers % [K[?2004heexit[?2004l
+
+Saving session...
+...saving history...truncating history files...
+...completed.
+
+Script done on Mon Oct 14 13:12:47 2024
