@@ -1,0 +1,185 @@
+Script started on Fri Oct 25 13:41:10 2024
+[1m[7m%[27m[1m[0m                                                                                ]7;file://ZARS01noMacBook-Pro.local/Users/veikka.sakari.junttila/fs-part12-containers/todo-app/todo-backend[0m[27m[24m[Jveikka.sakari.junttila@ZARS01noMacBook-Pro todo-backend % [K[?2004hddocker exec -it mongo- [K11 bash[?2004l
+[1m
+What's next:[0m
+    Try Docker Debug for seamless, persistent debugging tools in any container or image → [36mdocker debug mongo-1[0m
+    Learn more at https://docs.docker.com/go/debug-cli/
+Error response from daemon: No such container: mongo-1
+[1m[7m%[27m[1m[0m                                                                                ]7;file://ZARS01noMacBook-Pro.local/Users/veikka.sakari.junttila/fs-part12-containers/todo-app/todo-backend[0m[27m[24m[Jveikka.sakari.junttila@ZARS01noMacBook-Pro todo-backend % [K[?2004hddocker - ps -a[?2004l
+CONTAINER ID   IMAGE                                                                                                  COMMAND                   CREATED          STATUS                     PORTS                            NAMES
+abc1861b8a44   mongo                                                                                                  "docker-entrypoint.s…"   15 minutes ago   Up 15 minutes              0.0.0.0:3456->27017/tcp          todo-backend-mongo-1
+5eb7411c4493   e9028308338b                                                                                           "docker-entrypoint.s…"   2 hours ago      Exited (137) 2 hours ago                                    todo-backend-app-1
+713cae3d3cc7   f22ff2f71c7d                                                                                           "docker-entrypoint.s…"   2 hours ago      Exited (137) 2 hours ago                                    eager_newton
+c5a3802bfed2   accessibility_map_front-remix                                                                          "docker-entrypoint.s…"   2 days ago       Exited (143) 3 hours ago                                    accessibility_map_front-remix-1
+ba88e60940e2   vsc-omo_sales_ss-5f4492c274701f42389ce5445496acc396e958211e6a2f1fad577dd3f450f698                      "/bin/sh -c 'echo Co…"   9 days ago       Exited (0) 6 days ago                                       nervous_wing
+eb513cbb2914   vsc-omo_pipline_testing-8f420db16df5396abcb096982f00de3c481386ce3e91ece64f09aedad07e88a9               "/bin/sh -c 'echo Co…"   2 weeks ago      Exited (255) 10 days ago                                    exciting_burnell
+f81b61a8db24   swaggerapi/swagger-editor:next-v5                                                                      "/docker-entrypoint.…"   3 weeks ago      Exited (255) 2 weeks ago   8080/tcp, 0.0.0.0:8080->80/tcp   hopeful_shirley
+bd006a4e8639   swaggerapi/swagger-editor:next-v5                                                                      "/docker-entrypoint.…"   3 weeks ago      Exited (255) 3 weeks ago   80/tcp, 0.0.0.0:80->8080/tcp     practical_austin
+bf63204b2699   swaggerapi/swagger-editor                                                                              "/docker-entrypoint.…"   3 weeks ago      Exited (0) 3 weeks ago                                      sharp_grothendieck
+59b2f05a4e15   vsc-semi_custom_segment_middle_mart-1f6f98cc50d7eedf1ff76453046aa4018555ad7ac97bec6e0708b5d0e4c7100e   "/bin/sh -c 'echo Co…"   5 weeks ago      Exited (0) 8 days ago                                       happy_elgamal
+28ca88d80a49   vsc-semi_custom_segment-0dae595bcbd06044a52d120e1ba72bbab51f911b9c44515bac13ae8cc9e1b50c               "/bin/sh -c 'echo Co…"   6 weeks ago      Exited (0) 9 days ago                                       boring_wu
+b5061b3bab79   vsc-omo_sales_lm-876324129d270e2dc73cefdb53234f6decc859452afea7a789f2f6f64d4d2c8a                      "/bin/sh -c 'echo Co…"   6 weeks ago      Exited (0) 6 days ago                                       wizardly_lehmann
+afd4e34446cf   vsc-omo_loc_genome_mart-3d73d2c3e4e1e4ebc96c26d9f8c8d6997ae32070f1afd6ea9af4297972715a8d               "/bin/sh -c 'echo Co…"   6 weeks ago      Exited (0) 6 days ago                                       nifty_fermi
+abe4863ad789   vsc-custom_segment_middle_mart-184812ca4f944b6a82e84b3720805efa820cd1d712c7434f58d9a069ac17d546        "/bin/sh -c 'echo Co…"   7 weeks ago      Exited (0) 5 weeks ago                                      objective_euler
+a81d48a2b278   vsc-omo_interest_genome-2be4b2dac8cec9eacb000f404efff2c50de1435cc7e162681dfdc5adda19a896               "/bin/sh -c 'echo Co…"   7 weeks ago      Exited (0) 7 weeks ago                                      angry_hodgkin
+[1m[7m%[27m[1m[0m                                                                                ]7;file://ZARS01noMacBook-Pro.local/Users/veikka.sakari.junttila/fs-part12-containers/todo-app/todo-backend[0m[27m[24m[Jveikka.sakari.junttila@ZARS01noMacBook-Pro todo-backend % [K[?2004hdocker ps -aexec -it mongo-1 bash[K bash [A[79C bash [A[74C[?2004l[1B
+[1m
+What's next:[0m
+    Try Docker Debug for seamless, persistent debugging tools in any container or image → [36mdocker debug mongo[0m
+    Learn more at https://docs.docker.com/go/debug-cli/
+Error response from daemon: No such container: mongo
+[1m[7m%[27m[1m[0m                                                                                ]7;file://ZARS01noMacBook-Pro.local/Users/veikka.sakari.junttila/fs-part12-containers/todo-app/todo-backend[0m[27m[24m[Jveikka.sakari.junttila@ZARS01noMacBook-Pro todo-backend % [K[?2004hdocker exec -it mongo bash[K[K b [K[K[A[79C     [7mabc186[7m1[7mb8a44[27m[K[A[68C[27ma[27mb[27mc[27m1[27m8[27m61[27mb[27m8[27ma[27m4[27m4bash     bash[?2004l
+[?2004hroot@abc1861b8a44:/# ls
+[?2004lbin   dev			  home	      lib64  opt   run	 sys  var
+boot  docker-entrypoint-initdb.d  js-yaml.js  media  proc  sbin  tmp
+data  etc			  lib	      mnt    root  srv	 usr
+[?2004hroot@abc1861b8a44:/# show dbs
+[?2004lbash: show: command not found
+[?2004hroot@abc1861b8a44:/# mong  o [7m-u root -p example[27m-u root -p example
+[?2004lbash: mongo: command not found
+[?2004hroot@abc1861b8a44:/# cd bin/
+Display all 316 possibilities? (y or n)
+[                        infocmp                  rev
+addpart                  infotocap                rgrep
+apt                      install                  rm
+apt-cache                install_compass          rmdir
+apt-cdrom                ionice                   run-parts
+apt-config               ipcmk                    runcon
+apt-get                  ipcrm                    savelog
+apt-key                  ipcs                     script
+apt-mark                 ischroot                 scriptlive
+arch                     join                     scriptreplay
+awk                      jq                       sdiff
+b2sum                    kill                     sed
+base32                   last                     select-editor
+base64                   lastb                    sensible-browser
+basename                 lastlog                  sensible-editor
+basenc                   ld.so                    sensible-pager
+bash                     ldd                      sensible-terminal
+bashbug                  link                     seq
+bsondump                 linux32                  setarch
+c_rehash                 linux64                  setpriv
+captoinfo                ln                       setsid
+cat                      locale                   setterm
+chage                    locale-check             sg
+--More--[Kchattr                   localedef                sh
+--More--[Kchcon                    logger                   sha1sum
+--More--[Kchfn                     login                    sha224sum
+--More--[Kchgrp                    logname                  sha256sum
+--More--[Kchmod                    ls                       sha384sum
+--More--[Kchoom                    lsattr                   sha512sum
+--More--[Kchown                    lsblk                    shred
+--More--[Kchrt                     lscpu                    shuf
+--More--[Kchsh                     lsipc                    skill
+--More--[Kcksum                    lslocks                  slabtop
+--More--[Kclear                    lslogins                 sleep
+--More--[Kclear_console            lsmem                    snice
+--More--[Kcmp                      lsns                     sort
+--More--[Kcomm                     man                      split
+--More--[Kcp                       mawk                     stat
+--More--[Kcsplit                   mcookie                  stdbuf
+--More--[Kcut                      md5sum                   stty
+--More--[Kdash                     md5sum.textutils         su
+--More--[Kdate                     memhog                   sum
+--More--[Kdd                       mesg                     sync
+--More--[Kdeb-systemd-helper       migratepages             tabs
+--More--[Kdeb-systemd-invoke       migspeed                 tac
+--More--[Kdebconf                  mkdir                    tail
+--More--[Kdebconf-apt-progress     mkfifo                   tar
+--More--[Kdebconf-communicate      mknod                    taskset
+--More--[Kdebconf-copydb           mktemp                   tee
+--More--[Kdebconf-escape           mongod                   tempfile
+--More--[Kdebconf-set-selections   mongodump                test
+--More--[Kdebconf-show             mongoexport              tic
+--More--[Kdelpart                  mongofiles               timeout
+--More--[Kdf                       mongoimport              tload
+--More--[Kdiff                     mongorestore             toe
+--More--[Kdiff3                    mongos                   top
+--More--[Kdir                      mongosh                  touch
+--More--[Kdircolors                mongostat                tput
+--More--[Kdirname                  mongotop                 tr
+--More--[Kdmesg                    more                     true
+--More--[Kdnsdomainname            mount                    truncate
+--More--[Kroot@abc1861b8a44:/# cd bin/       bin/mongodmongo -u root -p exampleroot@abc1861b8a44:/# [16Pshow dbsmongo -u root -p example
+[?2004lbash: mongo: command not found
+[?2004hroot@abc1861b8a44:/# mongo -u root -p example[1@s[1@h
+[?2004l]0;mongosh mongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000Current Mongosh Log ID:	671b2360406964f61bfe6910
+Connecting to:		[1m[32mmongodb://<credentials>@127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.3.2[0m
+Using MongoDB:		8.0.1
+[1m[33mUsing Mongosh[0m:		2.3.2
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+
+To help improve our products, anonymous usage data is collected and sent to MongoDB periodically (https://www.mongodb.com/legal/privacy-policy).
+You can opt-out by running the disableTelemetry() command.
+
+[1G[0J [1G[1m[33m------[0m
+   [1m[33mThe server generated these startup warnings when booting[0m
+   2024-10-25T04:26:35.654+00:00: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine. See http://dochub.mongodb.org/core/prodnotes-filesystem
+   2024-10-25T04:26:36.247+00:00: For customers running the current memory allocator, we suggest changing the contents of the following sysfsFile
+   2024-10-25T04:26:36.247+00:00: We suggest setting the contents of sysfsFile to 0.
+   2024-10-25T04:26:36.247+00:00: Your system has glibc support for rseq built in, which is not yet supported by tcmalloc-google and has critical performance implications. Please set the environment variable GLIBC_TUNABLES=glibc.pthread.rseq=0
+   2024-10-25T04:26:36.247+00:00: vm.max_map_count is too low
+   2024-10-25T04:26:36.247+00:00: We suggest setting swappiness to 0 or 1, as swapping can cause performance problems.
+[1m[33m------[0m
+
+[1G[0Jtest> [7Gshow dbs
+[1madmin[0m         100.00 KiB
+[1mconfig[0m         60.00 KiB
+[1mlocal[0m          72.00 KiB
+[1mthe_database[0m   40.00 KiB
+[1G[0Jtest> [7Guse teh[1G[0Jtest> use te[13G[1G[0Jtest> use t[12Ghe [1G[0Jtest> use the[14G_database
+switched to db the_database
+[1G[0Jthe_database> [15Gdb.todos.find({})
+[
+  {
+    _id: ObjectId([32m'671b1dfa73ef4dbe0cfe6911'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'671b1dfa73ef4dbe0cfe6912'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gshow collections
+[1mtodos[0m
+[1G[0Jthe_database> [15G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> [15Gdb.collection.insertOne()[1D[1G[0Jthe_database> db.collection.insertOne[44m([49m)[39G[1G[0Jthe_database> db.collection.insertOne[44m([49m[)[40G[1G[0Jthe_database> db.collection.insertOne[44m([49m[])[41G[1G[0Jthe_database> db.collection.insertOne[44m([49m[)[40G[1G[0Jthe_database> db.collection.insertOne[44m([49m)[39G[1G[0Jthe_database> db.collection.insertOne[44m([49m{)[40G[1G[0Jthe_database> db.collection.insertOne[44m([49m{})[41G[1D[1G[0Jthe_database> db.collection.insertOne([44m{[49m})[40G[1G[0Jthe_database> db.collection.insertOne([44m{[49mt})[41G[1G[0Jthe_database> db.collection.insertOne([44m{[49mte})[42G[1G[0Jthe_database> db.collection.insertOne([44m{[49mtes})[43G[1G[0Jthe_database> db.collection.insertOne([44m{[49mtest})[44G[1G[0Jthe_database> db.collection.insertOne([44m{[49mtes})[43G[1G[0Jthe_database> db.collection.insertOne([44m{[49mte})[42G[1G[0Jthe_database> db.collection.insertOne([44m{[49mtex})[43G[1G[0Jthe_database> db.collection.insertOne([44m{[49mtext})[44G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m:})[45G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: })[46G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"})[39m[47G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: })[46G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: W})[47G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: })[46G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"})[39m[47G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"L})[39m[48G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Le})[39m[49G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Lea})[39m[50G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Lear})[39m[51G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn})[39m[52G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn })[39m[53G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn a})[39m[54G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn ab})[39m[55G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn abo})[39m[56G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn abou})[39m[57G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about})[39m[58G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about })[39m[59G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about c})[39m[60G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about co})[39m[61G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about con})[39m[62G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about cont})[39m[63G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about conta})[39m[64G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about contai})[39m[65G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about contain})[39m[66G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about containe})[39m[67G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about container})[39m[68G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about containers})[39m[69G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m})[70G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m,})[71G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, })[72G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, d})[73G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, [36mdo[39m})[74G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, don})[75G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, done})[76G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m:})[77G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: })[78G[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: f}) [79G[1A[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: fa})[80G[1A[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: fal})[1G[1A[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: fals})[2G[1A[1G[0Jthe_database> db.collection.insertOne([44m{[49m[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: [33mfalse[39m})[3G[2C[1A[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: [33mfalse[39m})[5G
+{
+  acknowledged: [33mtrue[39m,
+  insertedId: ObjectId([32m'671b23bd406964f61bfe6911'[39m)
+}
+[1G[0Jthe_database> [15G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: [33mfalse[39m})[5G[1A[1G[0Jthe_database> show collections[31G
+[1mcollection[0m
+[1mtodos[0m
+[1G[0Jthe_database> [15G[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> db.collection.insertOne({[33mtext[39m: [32m"Learn about containers"[39m, [33mdone[39m: [33mfalse[39m})[5G[1A[1G[0Jthe_database> show collections[31G[1G[0Jthe_database> db.todos.find({})[32G[1G[0Jthe_database> use the_database[31G[1G[0Jthe_database> db.todos.find({})[32G
+[
+  {
+    _id: ObjectId([32m'671b1dfa73ef4dbe0cfe6911'[39m),
+    text: [32m'Write code'[39m,
+    done: [33mtrue[39m
+  },
+  {
+    _id: ObjectId([32m'671b1dfa73ef4dbe0cfe6912'[39m),
+    text: [32m'Learn about containers'[39m,
+    done: [33mfalse[39m
+  }
+]
+[1G[0Jthe_database> [15Gexit
+[?2004hroot@abc1861b8a44:/# exit
+[?2004lexit
+[1m
+What's next:[0m
+    Try Docker Debug for seamless, persistent debugging tools in any container or image → [36mdocker debug abc1861b8a44[0m
+    Learn more at https://docs.docker.com/go/debug-cli/
+[1m[7m%[27m[1m[0m                                                                                ]7;file://ZARS01noMacBook-Pro.local/Users/veikka.sakari.junttila/fs-part12-containers/todo-app/todo-backend[0m[27m[24m[Jveikka.sakari.junttila@ZARS01noMacBook-Pro todo-backend % [K[?2004heexit[?2004l
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
+Deleting expired sessions...none found.
+
+Script done on Fri Oct 25 13:54:31 2024
