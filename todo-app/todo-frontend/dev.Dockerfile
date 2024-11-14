@@ -8,7 +8,7 @@ RUN npm ci
 
 COPY . .
 
-ENV VITE_BACKEND_URL=http://localhost:8080/api
+ENV VITE_BACKEND_URL=http://localhost:8080/api/
 
 EXPOSE 5173
 

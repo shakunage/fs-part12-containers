@@ -1,8 +1,4 @@
 services:
-  app:
-    extends: 
-      file: todo-frontend/docker-compose.dev.yml
-      service: app
   backend:
     extends: 
       file: todo-backend/docker-compose.dev.yml
@@ -15,6 +11,10 @@ services:
     extends: 
       file: todo-backend/docker-compose.dev.yml
       service: redis
+  app:
+    extends: 
+      file: todo-frontend/docker-compose.dev.yml
+      service: app
   nginx:
     image: nginx:1.20.1
     volumes:
@@ -23,4 +23,5 @@ services:
       - 8080:80
     container_name: reverse-proxy
     depends_on:
-      - app # wait for the frontend container to be started
+      - app
+      - backend
