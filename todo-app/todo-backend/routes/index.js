@@ -11,7 +11,7 @@ router.get('/', async (req, res) => {
 
   console.log(visits)
   
-  if (isNaN(visits)) {
+  if (isNaN(visits) || visits === null) {
     await redis.setAsync('visits', 0)
   }
 
@@ -30,15 +30,35 @@ router.get('/', async (req, res) => {
 router.get('/statistics', async (req, res) => {
 
   added_todos = await redis.getAsync('added_todos')
-  
-  if (isNaN(added_todos)) {
+  console.log(added_todos)
+
+  if (isNaN(added_todos) || added_todos === null) {
     await redis.setAsync('added_todos', 0)
   }
 
   added_todos = await redis.getAsync('added_todos')
-
   res.send({
     added_todos
+  });
+});
+
+/* GET index data. */
+router.post('/todos', async (req, res) => {
+
+  added_todos = await redis.getAsync('added_todos')
+
+  console.log(added_todos)
+  
+  if (isNaN(added_todos) || added_todos === null) {
+    await redis.setAsync('added_todos', 0)
+  }
+
+  redis.setAsync('added_todos', parseInt(added_todos)+1)
+
+  visits = await redis.getAsync('added_todos')
+
+  res.send({
+    ...configs
   });
 });
 
