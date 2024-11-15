@@ -11,19 +11,19 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
   }
 
   return (
-    <>
-      {todos.map(todo => {
+    <div>
+      {todos.map((todo, index) => {
         const doneInfo = (
-          <>
+          <div>
             <span>This todo is done</span>
             <span>
               <button onClick={onClickDelete(todo)}> Delete </button>
             </span>
-          </>
+          </div>
         )
 
         const notDoneInfo = (
-          <>
+          <div>
             <span>
               This todo is not done
             </span>
@@ -31,14 +31,16 @@ const TodoList = ({ todos, deleteTodo, completeTodo }) => {
               <button onClick={onClickDelete(todo)}> Delete </button>
               <button onClick={onClickComplete(todo)}> Set as done </button>
             </span>
-          </>
+          </div>
         )
 
         return (
-          <Todo item={todo} notDoneInfo={notDoneInfo} doneInfo={doneInfo}/>
+          <div key={todo.id || index}>
+            <Todo item={todo} notDoneInfo={notDoneInfo} doneInfo={doneInfo} />
+          </div>
         )
-      }).reduce((acc, cur) => [...acc, <hr />, cur], [])}
-    </>
+      })}
+    </div>
   )
 }
 

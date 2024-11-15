@@ -17,6 +17,7 @@ router.post('/', async (req, res) => {
     done: false
   })
   res.send(todo);
+  res.sendStatus(201);
 });
 
 const singleRouter = express.Router();
@@ -37,23 +38,14 @@ singleRouter.delete('/', async (req, res) => {
 
 /* GET todo. */
 singleRouter.get('/', async (req, res) => {
+
   res.sendStatus(405); // Implement this
 });
 
 /* PUT todo. */
 singleRouter.put('/', async (req, res) => {
-  visits = await redis.getAsync('visits')
-
-  console.log(visits)
-  
-  if (isNaN(visits)) {
-    await redis.setAsync('visits', 0)
-  }
-
-  visits = await redis.getAsync('visits')
-
-
-  res.sendStatus(405); // Implement this
+  await req.todo.updateOne({ done: true })
+  res.sendStatus(200);
 });
 
 router.use('/:id', findByIdMiddleware, singleRouter)

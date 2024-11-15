@@ -14,4 +14,4 @@ EXPOSE 5173
 
 RUN npx jest
 
-CMD ["npm", "run", "dev"]
+CMD ["npm", "run", "dev", "--", "--host"]

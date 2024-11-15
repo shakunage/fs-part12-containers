@@ -43,7 +43,7 @@ router.get('/statistics', async (req, res) => {
 });
 
 /* GET index data. */
-router.post('/todos', async (req, res) => {
+router.post('/', async (req, res) => {
 
   added_todos = await redis.getAsync('added_todos')
 
