@@ -42,24 +42,4 @@ router.get('/statistics', async (req, res) => {
   });
 });
 
-/* GET index data. */
-router.post('/', async (req, res) => {
-
-  added_todos = await redis.getAsync('added_todos')
-
-  console.log(added_todos)
-  
-  if (isNaN(added_todos) || added_todos === null) {
-    await redis.setAsync('added_todos', 0)
-  }
-
-  redis.setAsync('added_todos', parseInt(added_todos)+1)
-
-  visits = await redis.getAsync('added_todos')
-
-  res.send({
-    ...configs
-  });
-});
-
 module.exports = router;
