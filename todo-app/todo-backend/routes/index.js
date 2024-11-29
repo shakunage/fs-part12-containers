@@ -30,7 +30,7 @@ router.get('/', async (req, res) => {
 router.get('/statistics', async (req, res) => {
 
   added_todos = await redis.getAsync('added_todos')
-  console.log(added_todos)
+  console.log("hoge")
 
   if (isNaN(added_todos) || added_todos === null) {
     await redis.setAsync('added_todos', 0)
