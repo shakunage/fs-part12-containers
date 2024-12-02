@@ -1,0 +1,9 @@
+services:
+  app:
+    image: todo-front-production
+    volumes:
+      - ./:/usr/src/app # The path can be relative, so ./ is enough to say "the same location as the docker-compose.yml"
+    build:
+      context: . 
+      dockerfile: Dockerfile
+    container_name: todo-front-production-proxied
