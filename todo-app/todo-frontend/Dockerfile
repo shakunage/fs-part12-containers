@@ -16,4 +16,4 @@ RUN npx jest
 
 RUN npm run build
 
-CMD ["serve", "-s", "dist", "--listen", "0.0.0.0:4173"]
+CMD ["serve", "-s", "dist", "--listen", "4173"]
